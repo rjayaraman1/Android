@@ -1,0 +1,13 @@
+
+Download Android SDK / Android Studio 
+(if you install Android Studio, SDK is installed automatically)
+vi ~/.bash_profile
+export ANDROID_HOME=/Users/rajej/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+Save the file
+In terminal type source ~/.bash_profile
+To verify the setup type echo $PATH
+You should see the above android sdk path
+Type the below command from any folder
+adb devices 
+It should show connected devices
